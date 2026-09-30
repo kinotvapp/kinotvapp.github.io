@@ -36,6 +36,20 @@ a { color: var(--kino-red); }
   padding: 6px 14px;
 }
 
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.github-link svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--kino-text-secondary);
+}
+
+.github-link:hover svg { fill: var(--kino-text); }
+
 .hero {
   text-align: center;
   padding: 40px 5vw 80px;
