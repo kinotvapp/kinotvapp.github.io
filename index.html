@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kino — reproductor de películas y series</title>
+  <meta name="description" content="Kino: un reproductor de películas y series para celular y TV, con plugins que cualquiera puede publicar.">
+  <link rel="icon" href="assets/kino-tv-logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <img src="assets/kino-tv-logo.svg" alt="Kino">
+    <a class="lang-switch" href="/en/">English</a>
+  </header>
+
+  <section class="hero">
+    <img class="hero-logo" src="assets/kino-tv-banner.svg" alt="Kino">
+    <h1 class="hero-tagline">Un reproductor de películas y series, para el celular y la TV — el mismo APK en cualquiera de los dos.</h1>
+    <p class="hero-subtitle">Funciona con plugins: eliges de dónde viene tu contenido.</p>
+    <div class="hero-shots">
+      <img src="assets/screenshot-phone-home.png" alt="Home de Kino en el celular" loading="lazy">
+      <img src="assets/screenshot-tv-home.png" alt="Home de Kino en la TV" loading="lazy">
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Qué es Kino</h2>
+    <p>Todo lo que ves en Kino llega a través de plugins: pequeñas piezas de código, publicadas por
+    quien quiera, que conectan una fuente de contenido con la app. Son el motor de todo lo demás —
+    no un agregado, sino la forma en la que Kino trae contenido.</p>
+    <p>Kino es un reproductor de películas y series para el celular y el televisor (Android TV / Fire TV).
+    Es el mismo APK para los dos: se instala igual en cualquiera de los dos aparatos, y él solo se
+    acomoda a una pantalla grande con control remoto o a una pantalla de celular con los dedos.</p>
+    <p>No trae publicidad, ni rastreadores que reporten lo que ves, ni instala nada aparte de la app misma.</p>
+  </section>
+
+  <section class="section origin">
+    <h2 class="section-title">Cómo nació</h2>
+    <p>Kino nació como una versión enfocada de un proyecto más grande: la idea era hacer una sola cosa
+    bien —ver video, en cualquier pantalla— en vez de cargar con todo lo que ese proyecto había ido
+    acumulando. De ahí quedó un reproductor liviano, pensado para funcionar sin depender de un
+    servidor propio: todo corre dentro de la app.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Qué puedes hacer</h2>
+    <div class="feature-grid">
+      <div class="feature-card"><h3>Ver películas y series</h3><p>Con póster, sinopsis y las temporadas y capítulos ordenados.</p></div>
+      <div class="feature-card"><h3>Canales en vivo</h3><p>Los tuyos propios, o los que traen los plugins instalados.</p></div>
+      <div class="feature-card"><h3>Buscar</h3><p>Cualquier título entre todas las fuentes a la vez.</p></div>
+      <div class="feature-card"><h3>Categorías</h3><p>Explorá por género.</p></div>
+      <div class="feature-card"><h3>Mi biblioteca</h3><p>Guarda lo que te interesa y avisa cuando sale un capítulo nuevo.</p></div>
+      <div class="feature-card"><h3>Continuar viendo</h3><p>Recuerda en qué minuto ibas, en cualquiera de tus aparatos.</p></div>
+      <div class="feature-card"><h3>Descargar</h3><p>Películas y capítulos para verlos sin internet.</p></div>
+      <div class="feature-card"><h3>Chromecast</h3><p>Mandá lo que ves a un Chromecast o TV compatible.</p></div>
+      <div class="feature-card"><h3>Subtítulos</h3><p>Con el idioma que prefieras.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Plugins</h2>
+    <p>Un plugin es una fuente de contenido que cualquiera puede publicar como un pequeño repositorio
+    público en GitHub. Instalas uno escribiendo <code>usuario/repositorio</code>, ves con qué sitios
+    se va a conectar, y desde ese momento es una fuente más: sus resultados aparecen en la búsqueda y
+    en el Home junto a todo lo demás.</p>
+    <div class="plugins-examples">
+      <div class="plugin-example-card">
+        <h3>Internet Archive</h3>
+        <p>El plugin más simple: películas y TV de dominio público. Buen punto de partida para escribir el tuyo.</p>
+        <a href="https://github.com/kinotvapp/kino-plugin-archive">kinotvapp/kino-plugin-archive</a>
+      </div>
+      <div class="plugin-example-card">
+        <h3>Tu servidor</h3>
+        <p>El ejemplo completo: ajustes, autenticación, tu propio servidor, descargas y canales en vivo con M3U+XMLTV.</p>
+        <a href="https://github.com/kinotvapp/kino-plugin-own-server">kinotvapp/kino-plugin-own-server</a>
+      </div>
+    </div>
+    <p><a href="https://kinotvapp.github.io/kino-plugins/">Guía completa para escribir un plugin →</a></p>
+  </section>
+
+  <section class="section cta">
+    <h2 class="section-title">Empezar</h2>
+    <p>Una sola APK sirve para celular, Android TV y Fire Stick — no hay una descarga distinta por aparato.</p>
+    <a class="cta-download" href="https://archive.org/download/kino-app/kino.apk">Descargar Kino</a>
+    <p>En Fire Stick / Android TV, con la app <strong>Downloader</strong>:</p>
+    <p class="cta-downloader-code">679304 1</p>
+    <p><a href="https://t.me/Kinoapptv">t.me/Kinoapptv</a></p>
+  </section>
+
+  <section class="section legal">
+    <h2 class="section-title">Aviso legal</h2>
+    <p>Kino es un reproductor genérico: no aloja, indexa ni controla ningún contenido por sí mismo, y
+    no apoya la piratería ni la infracción de derechos de autor.</p>
+    <p>Un plugin es código de terceros, publicado por su propio autor. Kino no revisa, controla ni
+    respalda lo que hace un plugin ni el contenido al que se conecta — instalar y usar cualquier
+    plugin es una decisión de cada persona. El contenido al que se llega por cualquier fuente es
+    responsabilidad de quien lo publica, no de Kino.</p>
+    <p>Este repositorio es de código abierto (licencia Apache-2.0), con la esperanza de que lo que se
+    construya con él se use para bien. Kino no está afiliado con, ni respalda a, quienes usan,
+    bifurcan o redistribuyen este código.</p>
+    <p>Kino se entrega tal cual, sin garantías de ningún tipo.</p>
+  </section>
+
+  <footer class="footer">
+    <p>Kino no aloja contenido propio ni apoya la piratería. Los plugins, y el contenido al que se
+    conectan, son responsabilidad de quien los publica, no de Kino. Este repositorio es de código
+    abierto, con la esperanza de que lo que se construya con él se use para bien: Kino no está
+    afiliado con, ni respalda a, quienes usan o bifurcan este código.</p>
+    <p>Código en <a href="https://github.com/kinotvapp/kino-light">kinotvapp/kino-light</a>, licencia Apache-2.0.</p>
+  </footer>
+</body>
+</html>
