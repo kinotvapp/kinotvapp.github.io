@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kino — a movie and series player</title>
+  <meta name="description" content="Kino: a movie and series player for phone and TV, with plugins anyone can publish.">
+  <link rel="icon" href="../assets/kino-tv-logo.svg">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="header">
+    <img src="../assets/kino-tv-logo.svg" alt="Kino">
+    <a class="lang-switch" href="/">Español</a>
+  </header>
+
+  <section class="hero">
+    <img class="hero-logo" src="../assets/kino-tv-banner.svg" alt="Kino">
+    <h1 class="hero-tagline">A movie and series player for phone and TV — the same APK on either one.</h1>
+    <p class="hero-subtitle">Runs on plugins: you choose where your content comes from.</p>
+    <div class="hero-shots">
+      <img src="../assets/screenshot-phone-home.png" alt="Kino's Home on the phone" loading="lazy">
+      <img src="../assets/screenshot-tv-home.png" alt="Kino's Home on TV" loading="lazy">
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">What Kino is</h2>
+    <p>Everything you see in Kino arrives through plugins: small pieces of code, published by
+    anyone, that connect a content source to the app. They're the engine behind everything else —
+    not an add-on, but how Kino brings content in.</p>
+    <p>Kino is a movie and series player for phone and TV (Android TV / Fire TV). It is the same APK
+    for both: it installs the same way on either device, and it adapts itself to a big screen with a
+    remote or a phone screen with your fingers.</p>
+    <p>No ads, no trackers reporting what you watch, and it installs nothing besides the app itself.</p>
+  </section>
+
+  <section class="section origin">
+    <h2 class="section-title">How it was born</h2>
+    <p>Kino started as a focused rebuild of a larger project: the idea was to do one thing well —play
+    video, on any screen— instead of carrying everything that project had accumulated. What was left
+    is a light player, built to work without depending on a server of its own: everything runs inside
+    the app.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">What you can do</h2>
+    <div class="feature-grid">
+      <div class="feature-card"><h3>Watch movies and series</h3><p>With poster, synopsis, and seasons and episodes in order.</p></div>
+      <div class="feature-card"><h3>Live channels</h3><p>Your own, or the ones installed plugins bring.</p></div>
+      <div class="feature-card"><h3>Search</h3><p>Any title across every source at once.</p></div>
+      <div class="feature-card"><h3>Categories</h3><p>Browse by genre.</p></div>
+      <div class="feature-card"><h3>My library</h3><p>Save what interests you and get notified of new episodes.</p></div>
+      <div class="feature-card"><h3>Continue watching</h3><p>Remembers where you left off, on any of your devices.</p></div>
+      <div class="feature-card"><h3>Download</h3><p>Movies and episodes to watch offline.</p></div>
+      <div class="feature-card"><h3>Chromecast</h3><p>Send what you're watching to a compatible Chromecast or TV.</p></div>
+      <div class="feature-card"><h3>Subtitles</h3><p>In the language you prefer.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Plugins</h2>
+    <p>A plugin is a content source anyone can publish as a small public GitHub repository. You
+    install one by typing <code>owner/repo</code>, see which sites it will connect to, and from then
+    on it's one more source: its results show up in search and on Home alongside everything else.</p>
+    <div class="plugins-examples">
+      <div class="plugin-example-card">
+        <h3>Internet Archive</h3>
+        <p>The simplest plugin: public-domain movies and TV. A good starting point for writing your own.</p>
+        <a href="https://github.com/kinotvapp/kino-plugin-archive">kinotvapp/kino-plugin-archive</a>
+      </div>
+      <div class="plugin-example-card">
+        <h3>Your own server</h3>
+        <p>The complete example: settings, auth, your own server, downloads and live channels with M3U+XMLTV.</p>
+        <a href="https://github.com/kinotvapp/kino-plugin-own-server">kinotvapp/kino-plugin-own-server</a>
+      </div>
+    </div>
+    <p><a href="https://kinotvapp.github.io/kino-plugins/en/">Full guide to writing a plugin →</a></p>
+  </section>
+
+  <section class="section cta">
+    <h2 class="section-title">Get started</h2>
+    <p>One APK works for phone, Android TV and Fire Stick — there's no separate download per device.</p>
+    <a class="cta-download" href="https://archive.org/download/kino-app/kino.apk">Download Kino</a>
+    <p>On Fire Stick / Android TV, with the <strong>Downloader</strong> app:</p>
+    <p class="cta-downloader-code">679304 1</p>
+    <p><a href="https://t.me/Kinoapptv">t.me/Kinoapptv</a></p>
+  </section>
+
+  <section class="section legal">
+    <h2 class="section-title">Legal notice</h2>
+    <p>Kino is a generic media player: it does not host, index or control any content by itself, and
+    it does not support piracy or copyright infringement.</p>
+    <p>A plugin is third-party code, published by its own author. Kino does not review, control or
+    endorse what a plugin does or what content it connects to — installing and using any given
+    plugin is each person's own choice. Content reached through any source is that source's own
+    responsibility, not Kino's.</p>
+    <p>This repository is open source (Apache-2.0 license), in the hope that what people build with
+    it is put to good use. Kino is not affiliated with, and does not endorse, anyone who uses, forks
+    or redistributes this code.</p>
+    <p>Kino is provided as-is, without warranties of any kind.</p>
+  </section>
+
+  <footer class="footer">
+    <p>Kino does not host any content of its own and does not support piracy. Plugins, and the
+    content they connect to, are each their creator's responsibility, not Kino's. This repository is
+    open source, in the hope that what people build with it is put to good use: Kino is not
+    affiliated with, and does not endorse, anyone who uses or forks this code.</p>
+    <p>Code at <a href="https://github.com/kinotvapp/kino-light">kinotvapp/kino-light</a>, Apache-2.0 license.</p>
+  </footer>
+</body>
+</html>
