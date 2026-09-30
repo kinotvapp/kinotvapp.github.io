@@ -1,0 +1,151 @@
+:root {
+  --kino-red: #E50914;
+  --kino-black: #0E0E0E;
+  --kino-surface: #181818;
+  --kino-text-secondary: #B3B3B3;
+  --kino-text: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--kino-black);
+  color: var(--kino-text);
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a { color: var(--kino-red); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 5vw;
+}
+
+.header img { height: 32px; }
+
+.lang-switch {
+  font-size: 0.9rem;
+  color: var(--kino-text-secondary);
+  text-decoration: none;
+  border: 1px solid var(--kino-text-secondary);
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 5vw 80px;
+}
+
+.hero-logo { width: 220px; max-width: 60vw; margin-bottom: 24px; }
+
+.hero-tagline {
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+  font-weight: 700;
+  max-width: 700px;
+  margin: 0 auto 12px;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: var(--kino-red);
+  font-weight: 600;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.hero-shots {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.hero-shots img {
+  max-width: 280px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.section { padding: 60px 5vw; max-width: 960px; margin: 0 auto; }
+
+.section-title {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: var(--kino-surface);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.feature-card svg { width: 28px; height: 28px; fill: var(--kino-red); margin-bottom: 12px; }
+
+.origin, .legal { color: var(--kino-text-secondary); max-width: 700px; }
+
+.legal p { margin-bottom: 12px; }
+
+.plugins-examples {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.plugin-example-card {
+  background: var(--kino-surface);
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 260px;
+}
+
+.cta {
+  text-align: center;
+  background: var(--kino-surface);
+  border-radius: 16px;
+  padding: 48px 5vw;
+}
+
+.cta-download {
+  display: inline-block;
+  background: var(--kino-red);
+  color: var(--kino-text);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 16px 32px;
+  border-radius: 999px;
+  margin: 16px 0;
+}
+
+.cta-downloader-code {
+  font-family: ui-monospace, monospace;
+  font-size: 1.1rem;
+  background: var(--kino-black);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 5vw;
+  color: var(--kino-text-secondary);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  .hero-shots img { max-width: 220px; }
+}
